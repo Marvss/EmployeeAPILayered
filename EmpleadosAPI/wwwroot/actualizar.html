@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Actualizar Empleado</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<header>
+		<h1>Actualizar Empleado</h1>
+	</header>
+
+	<main>
+		<section class="section">
+			<h2>Formulario de Actualización</h2>
+			<form id="update-form">
+				<input type="hidden" id="employee-id">
+				<div class="form-group">
+					<label for="nombres">Nombres</label>
+					<input type="text" id="nombres" required>
+				</div>
+				<div class="form-group">
+					<label for="dpi">DPI</label>
+					<input type="text" id="dpi" required>
+				</div>
+				<div class="form-group">
+					<label for="fechaNacimiento">Fecha de Nacimiento</label>
+					<input type="date" id="fechaNacimiento" required>
+				</div>
+				<div class="form-group">
+					<label for="sexo">Sexo</label>
+					<input type="text" id="sexo" required>
+				</div>
+				<div class="form-group">
+					<label for="fechaIngreso">Fecha de Ingreso</label>
+					<input type="date" id="fechaIngreso" required>
+				</div>
+				<div class="form-group">
+					<label for="direccion">Dirección</label>
+					<input type="text" id="direccion">
+				</div>
+				<div class="form-group">
+					<label for="nit">NIT</label>
+					<input type="text" id="nit">
+				</div>
+				<div class="form-group">
+					<label for="departamentoId">Departamento</label>
+					<select id="departamentoId" required>
+						<option value="">Seleccione un departamento</option>
+						<option value="1">Créditos y Cobros</option>
+						<option value="2">Publicidad e Imagen Corporativa</option>
+						<option value="3">Gerencia General</option>
+						<option value="4">Finanzas</option>
+						<option value="5">Mercadeo</option>
+						<option value="6">Contabilidad</option>
+						<option value="7">Negocios</option>
+						<option value="8">Administración</option>
+						<option value="9">Informática</option>
+						<option value="10">Corporativo</option>
+						<option value="11">Riesgos</option>
+						<option value="12">Ventas</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="estatus">Estatus (0 para Inactivo, 1 para Activo)</label>
+					<input type="text" id="estatus" required>
+				</div>
+				<button type="submit">Actualizar</button>
+			</form>
+		</section>
+	</main>
+	<script src="js/actualizar.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Empleados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manejo de Empleados</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Lista de empleados</a></li>
+                <li><a href="empleado-form.html">Añadir Empleados</a></li>
+                <li><a href="reporte.html">Generar reporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Lista de Empleados</h2>
+            <table id="employee-table">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>DPI</th>
+                        <th>Edad</th>
+                        <th>Departamento</th>
+                        <th>Fecha de Ingreso</th>
+                        <th>Estatus</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Employee rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <script src="js/listadoEmpleados.js"></script>
+</body>
+</html>

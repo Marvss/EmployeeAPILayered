@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados, S.A. - Registro de Empleados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Empleados, S.A.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Lista de Empleados</a></li>
+                <li><a href="empleado-form.html">Registro de Empleados</a></li>
+                <li><a href="reporte.html">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h2>Registro de Empleados</h2>
+        <form id="empleado-form">
+            <input type="hidden" id="empleado-id" name="id">
+            <div class="form-group">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" required>
+            </div>
+            <div class="form-group">
+                <label for="dpi">DPI:</label>
+                <input type="text" id="dpi" name="dpi" required>
+            </div>
+            <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fechaIngreso">Fecha de Ingreso:</label>
+                <input type="date" id="fechaIngreso" name="fechaIngreso" required>
+            </div>
+            <div class="form-group">
+                <label for="Estatus">Estatus: 0 Activo y 1 Inactivo</label>
+                <input type="text" id="Estatus" name="Estatus" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <div class="form-group">
+                <label for="nit">NIT:</label>
+                <input type="text" id="nit" name="nit">
+            </div>
+            <div class="form-group">
+                <label for="departamentoId">Departamento:</label>
+                <select id="departamentoId" name="departamentoId" required>
+                    <!-- Opciones se cargarán dinámicamente -->
+                </select>
+            </div>
+            <button type="submit">Guardar Empleado</button>
+        </form>
+        <div id="edad-display"></div>
+    </main>
+
+    <script src="js/formularioIngreso.js"></script>
+</body>
+</html>
